@@ -136,6 +136,7 @@
   <ItemGroup>
     <ClInclude Include="DXHeaders.hpp" />
     <ClInclude Include="HighPerfomanceClock.hpp" />
+    <ClInclude Include="Keyboard.hpp" />
     <ClInclude Include="LangHeaders.hpp" />
     <ClInclude Include="WinHeaders.hpp" />
   </ItemGroup>
