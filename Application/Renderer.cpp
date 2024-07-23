@@ -1,0 +1,4 @@
+﻿/*
+*		Renderer
+*/
+#include "Renderer.hpp"

@@ -3,7 +3,7 @@
 */
 
 #pragma once
-#include <chrono>
+#include "LangHeaders.hpp"
 
 class Clock
 {

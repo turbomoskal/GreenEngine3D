@@ -3,7 +3,8 @@
 */
 #pragma once
 
-enum Keyboard
+// TODO: Check S841 warning. If there is a bug - fix it
+enum class Keyboard
 {
 	None = 0x00,	// Nothing is pressed
 	LButton,		// Left mouse
