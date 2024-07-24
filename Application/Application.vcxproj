@@ -130,20 +130,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
     <ClCompile Include="HighPerfomanceClock.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Renderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Direct3D.hpp" />
     <ClInclude Include="DXHeaders.hpp" />
+    <ClInclude Include="Engine.hpp" />
     <ClInclude Include="Event.hpp" />
     <ClInclude Include="HighPerfomanceClock.hpp" />
     <ClInclude Include="Keyboard.hpp" />
     <ClInclude Include="LangHeaders.hpp" />
+    <ClInclude Include="Queue.hpp" />
     <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Scene.hpp" />
     <ClInclude Include="Window.hpp" />
     <ClInclude Include="WinHeaders.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Application.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
