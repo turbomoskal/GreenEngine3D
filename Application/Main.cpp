@@ -17,6 +17,31 @@ void ReportLiveObjects() {
 	dxgiDebug->Release();
 }
 
+void ParseCommandLineArguments(D2D1_SIZE_U& _ClientSize, bool& _UseWarp, bool& _Debug) {
+	int argc;
+	wchar_t** argv = ::CommandLineToArgvW(::GetCommandLineW(), &argc);
+	auto clientWidth(0u);
+	auto clientHeight(0u);
+
+	for (auto i(0); i < argc; i++) {
+		if (::wcscmp(argv[i], L"-w") == 0 || ::wcscmp(argv[i], L"--width") == 0) {
+			clientWidth = ::wcstol(argv[++i], nullptr, 10); //? What is 10?
+		}
+		if (::wcscmp(argv[i], L"-h") == 0 || ::wcscmp(argv[i], L"--height") == 0) {
+			clientHeight = ::wcstol(argv[++i], nullptr, 10);
+		}
+		if (::wcscmp(argv[i], L"-warp") == 0 || ::wcscmp(argv[i], L"--warp") == 0) {
+			_UseWarp = true;
+		}
+		if (::wcscmp(argv[i], L"-d") == 0 || ::wcscmp(argv[i], L"--debug") == 0) {
+			_Debug = true;
+		}
+	}
+
+	_ClientSize = D2D1::SizeU(clientWidth, clientHeight);
+	::LocalFree(argv);
+}
+
 int __stdcall wWinMain(
 	_In_ HINSTANCE		hInstance,
 	_In_opt_ HINSTANCE	hPrevInstance,

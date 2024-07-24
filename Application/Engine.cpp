@@ -66,7 +66,10 @@ Engine::Engine(HINSTANCE _MainInstance) :
 	wndClass.lpszClassName = g_WindowClassName;
 	wndClass.hIconSm = LoadIconW(MainInstance, MAKEINTRESOURCEW(IDI_ICON1));
 
-	if (!RegisterClassExW(&wndClass)) {
+	static auto atom = ::RegisterClassExW(&wndClass);
+	assert(atom > 0);
+
+	if (!atom) {
 		// ?What is LANG_RUSSIAN
 		// TODO: Replace with exception and external WinForm app to show more info
 		MessageBoxExW(nullptr, L"Unable to register window class", L"Error", MB_OK | MB_ICONERROR, LANG_RUSSIAN);

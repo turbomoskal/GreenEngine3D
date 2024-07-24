@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Direct3D.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="HighPerfomanceClock.cpp" />
     <ClCompile Include="Main.cpp" />

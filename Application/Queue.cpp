@@ -3,12 +3,6 @@
 
 #include "Queue.hpp"
 
-inline void ThrowIfFailed(HRESULT hCode) {
-	if (FAILED(hCode)) {
-		throw std::exception("Ah shit, here we go again.\n", hCode);
-	}
-}
-
 Queue::Queue(ComPtr<ID3D12Device2> _Device, D3D12_COMMAND_LIST_TYPE _ListType) :
 	CommandListType(_ListType),
 	Device(_Device),

@@ -8,6 +8,12 @@
 #include "DXHeaders.hpp"
 using namespace Microsoft::WRL;
 
+inline void ThrowIfFailed(HRESULT hCode) {
+	if (FAILED(hCode)) {
+		throw std::exception("Ah shit, here we go again.\n", hCode);
+	}
+}
+
 class Queue {
 public:
 	Queue(ComPtr<ID3D12Device2>, D3D12_COMMAND_LIST_TYPE);
