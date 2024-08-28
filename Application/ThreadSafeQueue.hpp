@@ -12,6 +12,6 @@ public:
 	size_t Size() const;
 
 private:
-	std::queue<t> _Queue;
-	mutable std::mutex _Mutex;
+	std::queue<t>		_Queue;
+	mutable std::mutex	_Mutex;
 };

@@ -24,8 +24,8 @@ public:
 
 private:
 	void Free();
-	D3D12_CPU_DESCRIPTOR_HANDLE _Descriptor;
-	uint32_t _NumHandles;
-	uint32_t _DescriptorSize;
-	std::shared_ptr<DescriptorAllocatorPage> _Page;
+	D3D12_CPU_DESCRIPTOR_HANDLE					_Descriptor;
+	uint32_t									_NumHandles;
+	uint32_t									_DescriptorSize;
+	std::shared_ptr<DescriptorAllocatorPage>	_Page;
 };

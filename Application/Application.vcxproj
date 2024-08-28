@@ -137,29 +137,41 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Queue.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="uncompleted__Resource.cpp" />
     <ClCompile Include="ThreadSafeQueue.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
+    <ClInclude Include="Buffer.hpp" />
+    <ClInclude Include="ByteAddressBuffer.hpp" />
+    <ClInclude Include="Defines.h" />
     <ClInclude Include="DescriptorAllocation.hpp" />
     <ClInclude Include="DescriptorAllocator.hpp" />
     <ClInclude Include="DescriptorAllocatorPage.hpp" />
-    <ClInclude Include="Direct3D.hpp" />
-    <ClInclude Include="DXHeaders.hpp" />
+    <ClInclude Include="obsolete__Direct3D.hpp" />
+    <ClInclude Include="obsolete__DXHeaders.hpp" />
     <ClInclude Include="dxlibs.hpp" />
-    <ClInclude Include="Engine.hpp" />
-    <ClInclude Include="Event.hpp" />
+    <ClInclude Include="obsolete__Engine.hpp" />
+    <ClInclude Include="uncompleted__Event.hpp" />
     <ClInclude Include="helpers.hpp" />
     <ClInclude Include="HighPerfomanceClock.hpp" />
-    <ClInclude Include="Keyboard.hpp" />
-    <ClInclude Include="LangHeaders.hpp" />
-    <ClInclude Include="Queue.hpp" />
-    <ClInclude Include="Renderer.hpp" />
+    <ClInclude Include="uncompleted__Keyboard.hpp" />
+    <ClInclude Include="obsolete__LangHeaders.hpp" />
+    <ClInclude Include="obsolete__Queue.hpp" />
+    <ClInclude Include="obsolete__Renderer.hpp" />
+    <ClInclude Include="RenderTarget.hpp" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Scene.hpp" />
+    <ClInclude Include="Resource.hpp" />
+    <ClInclude Include="RootSignature.hpp" />
+    <ClInclude Include="obsolete__Scene.hpp" />
+    <ClInclude Include="StructuredBuffer.hpp" />
+    <ClInclude Include="Texture.hpp" />
+    <ClInclude Include="TextureUsage.hpp" />
     <ClInclude Include="ThreadSafeQueue.hpp" />
-    <ClInclude Include="Window.hpp" />
-    <ClInclude Include="WinHeaders.hpp" />
+    <ClInclude Include="UploadBuffer.hpp" />
+    <ClInclude Include="VertexBuffer.hpp" />
+    <ClInclude Include="obsolete__Window.hpp" />
+    <ClInclude Include="obsolete__WinHeaders.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Application.rc" />

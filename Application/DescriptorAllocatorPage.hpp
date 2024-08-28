@@ -32,8 +32,8 @@ private:
 	struct FreeBlockInfo {
 		FreeBlockInfo(uint32_t size) :
 			_Size(size) {}
-		uint32_t _Size;
-		FreeListBySize::iterator FreeListBySizeIt;
+		uint32_t					_Size;
+		FreeListBySize::iterator	_FreeListBySizeIt;
 	};
 	struct StaleDescriptorInfo {
 		StaleDescriptorInfo(uint32_t offset, uint32_t size, uint64_t frame) :
@@ -45,14 +45,14 @@ private:
 		uint64_t _FrameNumber;
 	};
 	using StaleDescriptorQueue = std::queue<StaleDescriptorInfo>;
-	FreeListByOffset _FreeListByOffset;
-	FreeListBySize _FreeListBySize;
-	StaleDescriptorQueue _StaleDescriptors;
-	Microsoft::WRL::ComPtr<ID3D12DescriptorHeap> _D3D12DescriptorHeap;
-	D3D12_DESCRIPTOR_HEAP_TYPE _HeapType;
-	CD3DX12_CPU_DESCRIPTOR_HANDLE _BaseDescriptor;
-	uint32_t _DescriptorHandleIncrementSize;
-	uint32_t _NumDescriptorsInHeap;
-	uint32_t _NumFreeHandles;
-	std::mutex _AllocationMutex;
+	FreeListByOffset								_FreeListByOffset;
+	FreeListBySize									_FreeListBySize;
+	StaleDescriptorQueue							_StaleDescriptors;
+	Microsoft::WRL::ComPtr<ID3D12DescriptorHeap>	_D3D12DescriptorHeap;
+	D3D12_DESCRIPTOR_HEAP_TYPE						_HeapType;
+	CD3DX12_CPU_DESCRIPTOR_HANDLE					_BaseDescriptor;
+	uint32_t										_DescriptorHandleIncrementSize;
+	uint32_t										_NumDescriptorsInHeap;
+	uint32_t										_NumFreeHandles;
+	std::mutex										_AllocationMutex;
 };
