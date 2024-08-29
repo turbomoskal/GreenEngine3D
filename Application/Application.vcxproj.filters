@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\DX12API">
+      <UniqueIdentifier>{1df2c46b-3259-4dce-b8de-0382d44e00f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Engine">
+      <UniqueIdentifier>{aaff6bf1-6183-489f-a9e2-7b77aa5e9233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Windows">
+      <UniqueIdentifier>{af8fb643-f530-47cb-ad33-e76fe5afbe3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Game">
+      <UniqueIdentifier>{0f95deb5-7fcd-42ff-a4f5-f65d9accd76b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -21,16 +33,16 @@
     <ClCompile Include="HighPerfomanceClock.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
+    <ClCompile Include="obsolete__Renderer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Engine.cpp">
+    <ClCompile Include="obsolete__Engine.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Queue.cpp">
+    <ClCompile Include="obsolete__Queue.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Direct3D.cpp">
+    <ClCompile Include="obsolete__Direct3D.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="ThreadSafeQueue.cpp">
@@ -48,15 +60,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="obsolete__DXHeaders.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="HighPerfomanceClock.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="uncompleted__Keyboard.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="uncompleted__Event.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="obsolete__Scene.hpp">
@@ -80,59 +83,86 @@
     <ClInclude Include="obsolete__Queue.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Application.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="DescriptorAllocation.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="DescriptorAllocator.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="DescriptorAllocatorPage.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="dxlibs.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="helpers.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="ThreadSafeQueue.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Buffer.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Defines.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="UploadBuffer.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="VertexBuffer.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureUsage.hpp">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
     <ClInclude Include="ByteAddressBuffer.hpp">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.hpp">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Defines.h">
+      <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
-    <ClInclude Include="RootSignature.hpp">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="DescriptorAllocation.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="DescriptorAllocator.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="DescriptorAllocatorPage.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="dxlibs.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="HighPerfomanceClock.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
     <ClInclude Include="RenderTarget.hpp">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="RootSignature.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
     <ClInclude Include="StructuredBuffer.hpp">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureUsage.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSafeQueue.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadBuffer.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.hpp">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="uncompleted__Keyboard.hpp">
+      <Filter>Файлы заголовков\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="uncompleted__Event.hpp">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandList.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBuffer.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="PanoToCubemapPSO.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="GenerateMipsPSO.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
