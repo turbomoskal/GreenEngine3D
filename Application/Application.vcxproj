@@ -131,12 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="obsolete__Direct3D.cpp" />
-    <ClCompile Include="obsolete__Engine.cpp" />
     <ClCompile Include="Clock.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="obsolete__Queue.cpp" />
-    <ClCompile Include="obsolete__Renderer.cpp" />
     <ClCompile Include="uncompleted__Resource.cpp" />
     <ClCompile Include="ThreadSafeQueue.cpp" />
   </ItemGroup>
@@ -155,32 +151,23 @@
     <ClInclude Include="GenerateMipsPSO.hpp" />
     <ClInclude Include="IndexBuffer.hpp" />
     <ClInclude Include="Mesh.hpp" />
-    <ClInclude Include="obsolete__Direct3D.hpp" />
-    <ClInclude Include="obsolete__DXHeaders.hpp" />
     <ClInclude Include="dxlibs.hpp" />
-    <ClInclude Include="obsolete__Engine.hpp" />
     <ClInclude Include="PanoToCubemapPSO.hpp" />
     <ClInclude Include="ResourceStateTracker.hpp" />
     <ClInclude Include="Event.hpp" />
     <ClInclude Include="helpers.hpp" />
     <ClInclude Include="Clock.hpp" />
     <ClInclude Include="Keyboard.hpp" />
-    <ClInclude Include="obsolete__LangHeaders.hpp" />
-    <ClInclude Include="obsolete__Queue.hpp" />
-    <ClInclude Include="obsolete__Renderer.hpp" />
     <ClInclude Include="RenderTarget.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Resource.hpp" />
     <ClInclude Include="RootSignature.hpp" />
-    <ClInclude Include="obsolete__Scene.hpp" />
     <ClInclude Include="StructuredBuffer.hpp" />
     <ClInclude Include="Texture.hpp" />
     <ClInclude Include="TextureUsage.hpp" />
     <ClInclude Include="ThreadSafeQueue.hpp" />
     <ClInclude Include="UploadBuffer.hpp" />
     <ClInclude Include="VertexBuffer.hpp" />
-    <ClInclude Include="obsolete__Window.hpp" />
-    <ClInclude Include="obsolete__WinHeaders.hpp" />
     <ClInclude Include="Window.hpp" />
   </ItemGroup>
   <ItemGroup>
