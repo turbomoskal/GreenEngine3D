@@ -131,7 +131,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Buffer.cpp" />
+    <ClCompile Include="ByteAddressBuffer.cpp" />
     <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="ConstantBuffer.cpp" />
+    <ClCompile Include="DescriptorAllocation.cpp" />
+    <ClCompile Include="DescriptorAllocator.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="uncompleted__Resource.cpp" />
     <ClCompile Include="ThreadSafeQueue.cpp" />

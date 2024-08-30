@@ -28,19 +28,43 @@
     <Filter Include="Исходные файлы\Windows">
       <UniqueIdentifier>{47fd3fcb-223f-4f30-8c58-4534b6fdb56d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\DX12API">
+      <UniqueIdentifier>{d7a9b6bb-c520-47fc-a543-a13e11dd5fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Engine">
+      <UniqueIdentifier>{02a09dab-bbfb-42dd-ab46-62ecea096b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Game">
+      <UniqueIdentifier>{841ac6f8-469a-4ab6-aad4-049fa281f644}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Clock.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="ThreadSafeQueue.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="uncompleted__Resource.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="uncompleted__Resource.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="Clock.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadSafeQueue.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteAddressBuffer.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBuffer.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="DescriptorAllocation.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
+    </ClCompile>
+    <ClCompile Include="DescriptorAllocator.cpp">
+      <Filter>Исходные файлы\DX12API</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

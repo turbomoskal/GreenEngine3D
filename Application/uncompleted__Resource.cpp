@@ -9,13 +9,8 @@ D3D12_RESOURCE_DESC Resource::GetD3D12ResourceDesc() const {
 * TODO:		Sources
 * 
 * Application
-* Buffer
-* ByteAddressBuffer
 * CommandList
 * CommandQueue
-* ConstantBuffer
-* DescriptorAllocation
-* DescriptorAllocator
 * DescriptionAllocatorPage
 * dxlibs
 * DynamicDescriptorHeap

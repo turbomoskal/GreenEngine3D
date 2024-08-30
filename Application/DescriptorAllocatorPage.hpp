@@ -12,6 +12,7 @@
 #include <queue>
 
 class DescriptorAllocatorPage : public std::enable_shared_from_this<DescriptorAllocatorPage> {
+public:
 	DescriptorAllocatorPage(D3D12_DESCRIPTOR_HEAP_TYPE, uint32_t);
 	D3D12_DESCRIPTOR_HEAP_TYPE GetHeapType() const;
 	bool HasSpace(uint32_t) const;
