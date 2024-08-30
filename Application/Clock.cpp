@@ -2,7 +2,7 @@
 * 
 */
 
-#include "HighPerfomanceClock.hpp"
+#include "Clock.hpp"
 
 Clock::Clock() :
 	deltaTime(0),

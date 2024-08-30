@@ -6,13 +6,6 @@ D3D12_RESOURCE_DESC Resource::GetD3D12ResourceDesc() const {
 	return resDesc;
 }
 /*
-* TODO:		Headers
-* 
-* DynamicDescriptorHeap
-* Game
-* ResourceStateTracker
-* Window
-* 
 * TODO:		Sources
 * 
 * Application

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.Direct3D.D3D12.1.614.1\build\native\Microsoft.Direct3D.D3D12.props" Condition="Exists('..\packages\Microsoft.Direct3D.D3D12.1.614.1\build\native\Microsoft.Direct3D.D3D12.props')" />
   <ItemGroup Label="ProjectConfigurations">
@@ -133,7 +133,7 @@
   <ItemGroup>
     <ClCompile Include="obsolete__Direct3D.cpp" />
     <ClCompile Include="obsolete__Engine.cpp" />
-    <ClCompile Include="HighPerfomanceClock.cpp" />
+    <ClCompile Include="Clock.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="obsolete__Queue.cpp" />
     <ClCompile Include="obsolete__Renderer.cpp" />
@@ -150,6 +150,8 @@
     <ClInclude Include="DescriptorAllocation.hpp" />
     <ClInclude Include="DescriptorAllocator.hpp" />
     <ClInclude Include="DescriptorAllocatorPage.hpp" />
+    <ClInclude Include="DynamicDescriptorHeap.hpp" />
+    <ClInclude Include="Game.hpp" />
     <ClInclude Include="GenerateMipsPSO.hpp" />
     <ClInclude Include="IndexBuffer.hpp" />
     <ClInclude Include="Mesh.hpp" />
@@ -158,10 +160,11 @@
     <ClInclude Include="dxlibs.hpp" />
     <ClInclude Include="obsolete__Engine.hpp" />
     <ClInclude Include="PanoToCubemapPSO.hpp" />
-    <ClInclude Include="uncompleted__Event.hpp" />
+    <ClInclude Include="ResourceStateTracker.hpp" />
+    <ClInclude Include="Event.hpp" />
     <ClInclude Include="helpers.hpp" />
-    <ClInclude Include="HighPerfomanceClock.hpp" />
-    <ClInclude Include="uncompleted__Keyboard.hpp" />
+    <ClInclude Include="Clock.hpp" />
+    <ClInclude Include="Keyboard.hpp" />
     <ClInclude Include="obsolete__LangHeaders.hpp" />
     <ClInclude Include="obsolete__Queue.hpp" />
     <ClInclude Include="obsolete__Renderer.hpp" />
@@ -178,6 +181,7 @@
     <ClInclude Include="VertexBuffer.hpp" />
     <ClInclude Include="obsolete__Window.hpp" />
     <ClInclude Include="obsolete__WinHeaders.hpp" />
+    <ClInclude Include="Window.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Application.rc" />

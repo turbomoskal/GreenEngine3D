@@ -25,12 +25,12 @@
     <Filter Include="Файлы заголовков\Game">
       <UniqueIdentifier>{0f95deb5-7fcd-42ff-a4f5-f65d9accd76b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Windows">
+      <UniqueIdentifier>{47fd3fcb-223f-4f30-8c58-4534b6fdb56d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="HighPerfomanceClock.cpp">
+    <ClCompile Include="Clock.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="obsolete__Renderer.cpp">
@@ -50,6 +50,9 @@
     </ClCompile>
     <ClCompile Include="uncompleted__Resource.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы\Windows</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,9 +75,6 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="obsolete__Engine.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="obsolete__Direct3D.hpp">
@@ -107,7 +107,7 @@
     <ClInclude Include="helpers.hpp">
       <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
-    <ClInclude Include="HighPerfomanceClock.hpp">
+    <ClInclude Include="Clock.hpp">
       <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
     <ClInclude Include="RenderTarget.hpp">
@@ -140,12 +140,6 @@
     <ClInclude Include="Application.hpp">
       <Filter>Файлы заголовков\Engine</Filter>
     </ClInclude>
-    <ClInclude Include="uncompleted__Keyboard.hpp">
-      <Filter>Файлы заголовков\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="uncompleted__Event.hpp">
-      <Filter>Файлы заголовков\Engine</Filter>
-    </ClInclude>
     <ClInclude Include="Mesh.hpp">
       <Filter>Файлы заголовков\DX12API</Filter>
     </ClInclude>
@@ -163,6 +157,27 @@
     </ClInclude>
     <ClInclude Include="GenerateMipsPSO.hpp">
       <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicDescriptorHeap.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="Event.hpp">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.hpp">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.hpp">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceStateTracker.hpp">
+      <Filter>Файлы заголовков\DX12API</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Файлы заголовков\Engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
